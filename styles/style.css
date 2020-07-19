@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid lightgreen;
+    outline: 1px solid green;
 }
 
 .page {
@@ -22,7 +22,7 @@
     /* выше установили ограничения для секции */
 }
 
-.logo_header {
+.header__logo {
     position: absolute;
     top: 30px;
     margin-left: 64px;
@@ -34,7 +34,7 @@
     z-index: 1;
 }
 
-.header_title {
+.header__title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -46,7 +46,7 @@
     font-weight: bold;
 }
 
-.header_subtitle {
+.header__subtitle {
     position: absolute;
     z-index: 6;
     width: 388px;
@@ -57,12 +57,12 @@
     font-weight: normal;
 }
 
-.header_subtitle-link {
+.header__subtitle-link {
     text-decoration: none;
     color: #2f80ed;
 }
 
-.header_main-illustration {
+.header__main-illustration {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -90,7 +90,7 @@
     justify-content: center;
 }
 
-.two-columns {
+.description__two-columns {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -140,7 +140,7 @@
     margin-bottom: 100px;
 }
 
-.digits-title {
+.digits__title {
     text-align: center;
     line-height: 69px;
     font-size: 60px;
@@ -148,7 +148,7 @@
     width: 60%
 }
 
-.digits-subtitle {
+.digits__subtitle {
     text-align: center;
     line-height: 34px;
     font-size: 24px;
@@ -156,7 +156,7 @@
     width: 60%
 }
 
-.digits-table {
+.digits__table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -167,20 +167,20 @@
     width: 1100px;
 }
 
-.table-cell {
+.table_cell {
     width: 250px;
     margin-right: 0;
     margin-left: 0;
     margin-top: 60px;
 }
 
-.tabel-heading {
+.tabel_heading {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
 }
 
-.table-text {
+.table_text {
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -203,7 +203,7 @@
     height: 790px;
 }
 
-.feinman_title {
+.feinman__title {
     /* position: absolute; */
     text-align: center;
     height: max-content;
@@ -216,7 +216,7 @@
     z-index: 1;
 }
 
-.feinman_subtitle {
+.feinman__subtitle {
     /* position: absolute; */
     margin-top: 70px;
     line-height: 51px;
@@ -226,7 +226,7 @@
     z-index: 1;
 }
 
-.feinmar_link {
+.feinmar__link {
     position: absolute;
     /* justify-content: flex-end; */
     margin-top: 50%;
@@ -239,7 +239,7 @@
     color: #000000;
 }
 
-.feinman_img {
+.feinman__img {
     position: absolute;
     width: 867px;
     height: 637px;
@@ -250,15 +250,16 @@
 }
 
 .kaufman {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-color: #1f1f1f;
-    overflow: hidden;
 }
 
-.kaufman-title_theme-dark {
+.kaufman__title_theme-dark {
     text-align: center;
     margin-top: 90px;
     line-height: 69px;
@@ -269,7 +270,7 @@
     z-index: 1;
 }
 
-.kaufman-subtitle_theme-dark {
+.kaufman__subtitle_theme-dark {
     top: 20px;
     color: white;
     z-index: 1;
@@ -280,14 +281,17 @@
     font-weight: normal;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
+    background-image: url(../images/kaufman-triangle.svg);
+    background-repeat: no-repeat;
     position: absolute;
+    top: 0;
     right: -210px;
     width: 877px;
     height: 877px;
 }
 
-.table_theme-dark {
+.kaufman__table_theme-dark {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -301,21 +305,21 @@
     z-index: 1;
 }
 
-.table-cell_theme-dark {
+.table_cell_theme-dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
 }
 
-.tabel-heading_theme-dark {
+.tabel_heading_theme-dark {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
     margin-top: 0;
 }
 
-.table-text_theme-dark {
+.table_text_theme-dark {
     line-height: 1.2;
     margin-top: 20px;
     font-size: 18px;
@@ -331,26 +335,35 @@
     color: white;
 }
 
-.footer-columns {}
+.footer__columns {}
 
-.footer-column_content-info {}
+.footer__column_content-info {}
 
-.footer_column-heading {}
+.footer__column-heading {}
 
-.footer_column-link {}
+.footer__column-link {}
 
-.footer-columns_content-social {
+.footer__columns_content-social {
     align-items: center;
 }
 
-.footer_column_social-icon {
-    background: url(../images/facebook_color_white.svg);
-    background-repeat: no-repeat;
-    background-position: left;
+.footer__column_social-icon {
     text-decoration: none;
     color: white;
+    margin: 0;
 }
 
-.logo-footer {}
+.social_icon {
+    text-decoration: none;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
 
-.footer-author {}
+.footer__logo {}
+
+.footer__author {}
