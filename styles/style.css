@@ -132,11 +132,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .digits__title {
+    margin-top: 100px;
     text-align: center;
     line-height: 69px;
     font-size: 60px;
