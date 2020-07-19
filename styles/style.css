@@ -11,6 +11,8 @@
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
@@ -31,15 +33,15 @@
 }
 
 .header__title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     margin-left: 64px;
+    margin-top: 0;
+    margin-bottom: 0;
     width: 730px;
     /* height: max-content; */
     line-height: 96px;
     font-size: 102px;
     font-weight: bold;
+    z-index: 6;
 }
 
 .header__subtitle {
