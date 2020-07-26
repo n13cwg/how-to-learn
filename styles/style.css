@@ -323,6 +323,8 @@
 }
 
 .footer__column_content_copyright {
+    display: flex;
+    align-items: flex-end;
     position: relative;
     flex-basis: 711px;
 }
@@ -355,14 +357,17 @@
 }
 
 .footer__column-links {
-    text-decoration: none;
     list-style: none;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
-    color: white;
     margin: 0;
     padding: 0;
+}
+
+.footer__column-link {
+    text-decoration: none;
+    color: white;
 }
 
 .footer__column_content_social {
