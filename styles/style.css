@@ -186,6 +186,7 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .table__text {
@@ -242,18 +243,6 @@
     color: #000000;
 }
 
-
-/*
-.feinman__img {
-    position: absolute;
-    width: 867px;
-    height: 637px;
-    left: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-} */
-
 .kaufman {
     position: relative;
     overflow: hidden;
@@ -279,6 +268,8 @@
     position: absolute;
     top: 0;
     right: -210px;
+    width: 877px;
+    height: 877px;
 }
 
 .table_theme-dark {
@@ -292,19 +283,21 @@
     margin-top: 80px;
 }
 
-.tabel_heading_theme-dark {
+
+/* .tabel_heading_theme-dark {
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
     margin-top: 0;
-}
+} */
 
-.table_text_theme-dark {
+
+/* .table_text_theme-dark {
     line-height: 1.2;
     margin-top: 20px;
     font-size: 18px;
     font-weight: normal;
-}
+} */
 
 .footer {
     display: flex;
@@ -324,9 +317,32 @@
     margin-bottom: 40px;
 }
 
-.footer__column_content_info {
+.footer__column {
     display: flex;
     flex-direction: column;
+}
+
+.footer__column_content_copyright {
+    position: relative;
+    flex-basis: 711px;
+}
+
+.logo__footer {
+    top: 0;
+    left: 0;
+    background-image: url(../images/logo_place_footer.svg);
+    background-repeat: no-repeat;
+}
+
+.footer__author {
+    top: 18px;
+    bottom: 18px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer__column_content_info {
     margin-bottom: 16px;
 }
 
@@ -349,13 +365,12 @@
     padding: 0;
 }
 
-.footer__columns_content-social {
-    display: flex;
-    flex-direction: column;
+.footer__column_content_social {
     margin-bottom: 16px;
 }
 
 .footer__social-icon {
+    text-decoration: none;
     color: white;
     width: 16px;
     height: 16px;
@@ -364,34 +379,4 @@
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
-}
-
-.footer__column_content_copyright {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    flex-basis: 711px;
-}
-
-.logo__footer {
-    /* display: flex;
-    justify-content: flex-start; */
-    top: 0;
-    left: 0;
-    background-image: url(../images/logo_place_footer.svg);
-    background-repeat: no-repeat;
-}
-
-.footer__author {
-    /* display: flex; */
-    /* justify-content: flex-start; */
-    /* flex-direction: column; */
-    /* align-items: flex-end; */
-    margin-top: 18px;
-    margin-bottom: 18px;
-    left: 0;
-    bottom: 0;
-    line-height: 25px;
-    font-size: 18px;
-    font-weight: normal;
 }
