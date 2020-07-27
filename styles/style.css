@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red;
+}
+
 .page {
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -22,16 +26,16 @@
 }
 
 .logo {
-    position: absolute;
-    top: 30px;
-    left: 64px;
     width: 183px;
     height: 32px;
     padding: 0;
     z-index: 1;
 }
 
-.logo__header {
+.logo_place_header {
+    position: absolute;
+    top: 30px;
+    left: 64px;
     background-image: url(../images/logo_place_header.svg);
     background-repeat: no-repeat;
 }
@@ -90,7 +94,7 @@
     justify-content: center;
 }
 
-.description__two-columns {
+.two-columns {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -231,7 +235,7 @@
     z-index: 1;
 }
 
-.feinmar__link {
+.feinman__link {
     position: absolute;
     top: 50%;
     right: 48px;
@@ -253,11 +257,11 @@
     background-color: #1f1f1f;
 }
 
-.section-title_theme-dark {
+.section-title_theme_dark {
     color: white;
 }
 
-.section-subtitle_theme-dark {
+.section-subtitle_theme_dark {
     color: white;
 }
 
@@ -272,12 +276,12 @@
     height: 877px;
 }
 
-.table_theme-dark {
+.table_theme_dark {
     margin-bottom: 90px;
     z-index: 1;
 }
 
-.table_cell_theme-dark {
+.table_cell_theme_dark {
     width: 200px;
     color: white;
     margin-top: 80px;
@@ -329,7 +333,7 @@
     flex-basis: 711px;
 }
 
-.logo__footer {
+.logo_place_footer {
     top: 0;
     left: 0;
     background-image: url(../images/logo_place_footer.svg);
