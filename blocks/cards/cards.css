@@ -1,0 +1,12 @@
+.cards {
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: stretch; */
+    flex-wrap: wrap;
+    max-width: 920px;
+}
+
+
+/* .cards:last-of-type {
+    margin-right: 0;
+} */
