@@ -9,3 +9,9 @@
     z-index: 1;
     color: #000000;
 }
+
+.feinman__link:hover {
+    transform: translate(0, -1px);
+    transition: ease-in 0.1s;
+    opacity: 0.8;
+}

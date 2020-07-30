@@ -4,5 +4,7 @@
 }
 
 .header__link:hover {
-    transition: transform 0.4s, opacity 0.4;
+    transform: translate(0, -1px);
+    transition: ease-in 0.1s;
+    opacity: 0.8;
 }
